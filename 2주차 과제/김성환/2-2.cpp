@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-char* coppy(char* str);
+char* copy(char* str);
 
 int main()
 {
@@ -32,7 +32,7 @@ int main()
 				}
 				if (i == index)
 				{
-					words[i] = coppy(buffer);
+					words[i] = copy(buffer);
 					words_count[index]++;
 					index++;
 					break;
@@ -89,7 +89,7 @@ int main()
 	return 0;
 }
 
-char* coppy(char* str)
+char* copy(char* str)
 {
 	char* p;
 	p = (char*)malloc(strlen(str) + 1);
