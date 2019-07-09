@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-char* coppy(char* str);
+char* copy(char* str);
 void sort_words(char** p, int* count, int n);
 
 int main()
@@ -30,7 +30,7 @@ int main()
 				}
 				if (i == index)
 				{
-					words[i] = coppy(buffer);
+					words[i] = copy(buffer);
 					words_count[index]++;
 					index++;
 					break;
@@ -57,7 +57,7 @@ int main()
 	return 0;
 }
 
-char* coppy(char* str)
+char* copy(char* str)
 {
 	char* p;
 	p = (char*)malloc(strlen(str) + 1);
