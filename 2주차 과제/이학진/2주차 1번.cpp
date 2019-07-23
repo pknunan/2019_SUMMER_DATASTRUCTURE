@@ -47,7 +47,7 @@ void sort()
 	char *temp;
 	int count;
 
-	for (int i = 0; i < n; i++) {		//사전식 정렬
+	for (int i = 0; i < n; i++) {		
 		for (int j = 0; j < n - i - 1; j++) {
 			if (strcmp(words_list[j],words_list[j + 1])>0) {
 				temp = words_list[j];
@@ -61,7 +61,7 @@ void sort()
 		}
 	}
 
-	for (int i = 0;i < n;i++) {		//중복거르기
+	for (int i = 0;i < n;i++) {		
 		if (strcmp(words_list[i], words_list[i + 1]) == 0) {
 			k = i;
 			while (strcmp(words_list[i], words_list[k + 1]) == 0) {

@@ -24,7 +24,7 @@ int main(void)
 		printf("%d\n",number);
 		token = strtok(NULL, delim);
 	}
-	printf("정수들의합 %d",sum);
+	printf("%d",sum);
 	return 0;
 }
 void read_line(char str[])
