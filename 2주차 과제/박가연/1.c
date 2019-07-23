@@ -38,13 +38,15 @@ int main(void)
 	}
 	for (int i = 0; i < n; i++)
 		fprintf(fp2, "%s %d\n", words[i], numbers[i]+1);
+	fclose(fp);
+	fclose(fp2);
 	return 0;
 }
 int search(char *buf)
 {
 	for (int i = 0; i < n; i++)
 	{
-		if (*words[i] == *buf)
+		if (strcmp(buf,words[i])==0)
 			return i;
 	}
 	return -1;

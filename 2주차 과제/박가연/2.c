@@ -20,6 +20,7 @@ int main(void)
 			n++;
 		}
 	}
+	fclose(fp);
 	while (1)
 	{
 		srand((unsigned)time(NULL));
