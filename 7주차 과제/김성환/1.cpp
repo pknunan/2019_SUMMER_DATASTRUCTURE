@@ -14,7 +14,6 @@ node* word_lists[27] = { NULL, };
 char buffer[BUFSIZ];
 char ignore[IGSIZE][BUFSIZ];
 int ign = 0;
-
 int isIgnore(char* ptr);
 void parseWord(char* buffer, int index);
 void freeList();
